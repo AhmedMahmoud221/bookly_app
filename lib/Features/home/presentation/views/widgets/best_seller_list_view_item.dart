@@ -50,7 +50,10 @@ class BestSellerListViewItem extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 3),
-                    const Text('J.K. Rowling', style: Styles.textStyle14),
+                    const Opacity(
+                      opacity: 0.7,
+                      child: Text('J.K. Rowling', style: Styles.textStyle14),
+                    ),
                     const SizedBox(height: 3),
                     Row(
                       children: [
@@ -61,7 +64,7 @@ class BestSellerListViewItem extends StatelessWidget {
                           ),
                         ),
                         const Spacer(),
-                        BookRating(),
+                        const BookRating(),
                       ],
                     ),
                   ],
